@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #52514e;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  z-index: 10;
+  box-shadow: 10px 10px 20px gray;
+
+}
+nav .logo{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: white;
+  background: #ab6e46;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #ab6e46;
+  }
+}
+
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.desc p{
+  text-align: center;
+  color: #7c7d7c;
+  font-size: 15;
+}
+div.desc .p{
+  text-align: center;
+  color: #2d2e2d;
+  font-style: bold;
+}
+
+.para{
+  font-size: 25px;
+  text-align: center;
+  color: #2d2e2d;
+  font-style: bold;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.33333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer{
+text-align:center;
+background:#e8e4da;
+height:250px;
+color:#52514e;
+font-size:20px;
+padding-top:30px;
+width: 100%;
+}
+
+
+h1{
+  font-size: 50px;
+  font-family: "Trirong", serif;
+  color: #52514e;
+}
+
+div.gallery img {
+  width: 80%;
+  height: auto;
+  border-radius: 5%;
+
+}
+div.gallery img:hover{
+  opacity: 0.7;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: inline-block;
+  width: 24.999%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 44.4;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background:#52514e;
+  border-radius: 5%;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.fa-brands {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  opacity: 0.5;
+}
+.fa-brands:hover {
+    opacity: 1.0;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  opacity: 0.5;
+}
+.fa:hover {
+    opacity: 1.0;
+}
+a{
+  color:#52514e;
+  text-decoration:none;
+}
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #52514e;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.responsive1 {
+  padding: 0 6px;
+  float: left;
+  width: 100%;
+  bottom: 0;
+}
+
+.header_img{
+  width: 100%;
+  height: auto;
+
+
+}
+.artist{
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
